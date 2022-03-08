@@ -1,0 +1,32 @@
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+  mat-icon {
+    margin: 1rem;
+  }
+}
+
+.activeLink{
+  background-color: #173091;
+  color: #ffffff;
+}
+
+.activeLink:hover {
+  color: #ffffff;
+}
+
+.navpic {
+  text-align: center;
+  padding: 1rem 1rem;
+  img {
+      width: 10vw;
+  }
+}
+// mat-divider {
+//   margin-top: 4rem;
+//   margin-bottom: 4rem;
+//   background-color: rgba(255, 255, 255, 0.5);
+// }

@@ -1,0 +1,67 @@
+
+<div class="navpic" *ngIf="!iconsOnly" style="min-width:100px;">
+  <img src="" />
+</div>
+
+<mat-divider *ngIf="!iconsOnly"></mat-divider>
+
+<a button mat-button class="menu-button" *ngIf="!iconsOnly" routerLinkActive="activeLink" routerLink="/home">
+  <mat-icon>home</mat-icon>
+  <span>Home</span>
+</a>
+
+<a button mat-button class="menu-button" *ngIf="!iconsOnly" routerLinkActive="activeLink" routerLink="/results">
+  <mat-icon>dashboard</mat-icon>
+  <span>Results</span>
+</a>
+
+<a button mat-button class="menu-button" *ngIf="!iconsOnly" routerLinkActive="activeLink" routerLink="/forms">
+  <mat-icon>list_alt</mat-icon>
+  <span>Forms</span>
+</a>
+
+<a button mat-button class="menu-button" *ngIf="!iconsOnly" routerLinkActive="activeLink" routerLink="/account">
+  <mat-icon>person</mat-icon>
+  <span>Account</span>
+</a>
+
+<button mat-button class="menu-button" [matMenuTriggerFor]="menu" *ngIf="!iconsOnly"> 
+  <mat-icon>supervisor_account</mat-icon>
+  <span>Admin</span></button>
+<mat-menu #menu="matMenu">
+  <a button mat-button class="menu-button" *ngIf="!iconsOnly" routerLinkActive="activeLink" routerLink="/users">
+    <mat-icon>supervised_user_circle</mat-icon>
+    <span>Users</span>
+  </a>
+
+  <a button mat-button class="menu-button" *ngIf="!iconsOnly" routerLinkActive="activeLink" routerLink="/attachments">
+    <mat-icon>cloud_upload</mat-icon>    
+    <span>Attachments</span>
+  </a>
+</mat-menu>
+
+
+<a button matTooltip="Home" matTooltipPosition="after" mat-button class="menu-button" *ngIf="iconsOnly" routerLinkActive="activeLink" routerLink="/home">
+  <mat-icon>home</mat-icon> 
+</a>
+
+<a button matTooltip="Results" matTooltipPosition="after" mat-button class="menu-button" *ngIf="iconsOnly" routerLinkActive="activeLink" routerLink="/results">
+  <mat-icon>dashboard</mat-icon>
+</a>
+
+<a button matTooltip="Forms" matTooltipPosition="after" mat-button class="menu-button" mat-button class="menu-button" *ngIf="iconsOnly" routerLinkActive="activeLink" routerLink="/forms">
+  <mat-icon>list_alt</mat-icon>
+</a>
+
+<a button matTooltip="Account" matTooltipPosition="after" mat-button class="menu-button" mat-button class="menu-button" *ngIf="iconsOnly" routerLinkActive="activeLink" routerLink="/account">
+  <mat-icon>person</mat-icon>
+</a>
+
+<a button matTooltip="Users" matTooltipPosition="after" mat-button class="menu-button" mat-button class="menu-button" *ngIf="iconsOnly" routerLinkActive="activeLink" routerLink="/users">
+  <mat-icon>supervised_user_circle</mat-icon>
+</a>
+
+<a button matTooltip="Attachments" matTooltipPosition="after" mat-button class="menu-button" mat-button class="menu-button" *ngIf="iconsOnly" routerLinkActive="activeLink" routerLink="/attachments">
+  <mat-icon>cloud_upload</mat-icon>    
+</a>
+

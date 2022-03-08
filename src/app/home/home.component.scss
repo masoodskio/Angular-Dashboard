@@ -1,0 +1,20 @@
+.home-main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+    background-position-x: 0%, 0%;
+    background-position-y: 0%, 0%;
+    background-repeat: repeat, repeat;
+    background-size: auto, auto;
+//background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+
+}
+
+@media screen and (min-width: 800px) {
+    .home-main  {
+    height: 100%;
+    width: 100%;
+    }
+  }
+  
